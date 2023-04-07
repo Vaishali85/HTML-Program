@@ -1,0 +1,70 @@
+
+/*******background color************/
+.background
+{
+    background-color: brown;
+    color:white;
+    text-align: center;
+    font-size:300%;
+}
+
+
+/*******background img******/
+.img
+{
+    background-image:url("F:\images\box.png");
+    
+    height:600px;
+    width: 800px;
+    
+    
+}
+
+/********backgroung attachment*****/
+.bg-img
+{
+background-attachment: fixed;
+background-position:right;
+}
+
+/***********margin-padding******/
+.margin
+{
+ background-color: purple;
+ font-size:30px;
+ color:white;
+ margin:100px 100px 150px 200px;
+
+}
+/************dropdown ********/
+.dropbtn
+{
+    background-color: purple;
+    color:white;
+    border:none;
+    padding:8px;
+    margin-left: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropmenu a
+{
+    text-decoration: none;
+    background-color: red;
+    color:aliceblue;
+    display: block;
+    padding: 5px;
+}
+.dropmenu
+{
+    position: absolute;
+    display: none;
+}
+.dropdown
+{
+    position: relative;
+}
+.dropdown:hover.dropmenu
+{
+display: block;
+}
