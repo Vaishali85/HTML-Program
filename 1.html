@@ -1,72 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <style>
-        .aliy {
-            width: 50%;
-            margin: 1cm;
-        }
-        div{
-            margin-left: 2cm;
-            margin-bottom: 1cm;
-        }
-        button,h1{
-            
-            margin-left: 4cm;
-            margin-top: 1cm;
-        }
-    </style>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Word In a String</title>
+   
 </head>
-
 <body>
-    <h1> Fill the form </h1>
-    <form class="ali">
+ <script>
+    
+    const str = 'This is a sunny day';
+    const reverseWords = str => {
+    var reversed = '';
+    reversed = str.split(" ").map(word => {
+      return word.split("").reverse().join("");
+    })
+        .join(" ");
+        return reversed;
+    };
+        console.log(reverseWords(str));
+       
 
-    <div>
-        <label> Name: </label>
-        <input class="ali" type="text" name="Name" size="15" /> 
-    </div>
-    <div>
-        <label> Address: </label>
-        <textarea class="ali" cols="80" rows="5" value="address">  
-        </textarea>
-    </div>
-    <div>
-        <label>
-             Age: 
-        </label>
-        <input type="number" class="ali" name="Age" size="15" /> 
-    </div>
-    <div>
-        <label>   
-            Telephone :  
-        </label>
-        <input type="text" name="country code" value="+91" size="2" />
-        <input type="text" class="ali" name="phone" size="10" /> 
-        
-    </div>
-    <div>
-        <label>
-         Email:
-        </label>
-        <input type="email" id="email" class="ali" name="email" /> <br>
-    </div>
-    <div>
-        <label>
-         Enrolment number:
-        </label>
-        <input type="number" id="pass" class="ali" name="pass"> <br><br>
-    </div>
-        <button type="submit">Save</button>
-    </form>
-
+ </script>
 </body>
-
 </html>
